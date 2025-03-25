@@ -1,0 +1,143 @@
+<html lang="en"><head><style>
+   
+</style>
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/welcom.css">
+<script src="js/3ca0a9bad6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,600;1,500&family=Kanit:wght@400;500&family=Nosifer&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top">
+        <img src="images/ma.jpeg" alt="">
+        <img src="images/noti.jpeg" alt="" style="float: right; padding-left: 10px;">
+        <p>Hi,  Valid user!</p>
+    </div> <br> <br> <br>  <br>
+    <div class="box">
+        <p>Today Spent</p>
+        <h2>₦200,000.00</h2>  <br>
+        <button style="border: none; "><a href="withdraw.html" style="text-decoration: none;">Withdraw</a></button>
+         <br>
+        <p>Daily spend target: ₦ 200,000.00</p>
+    </div> <br>
+
+   
+    <div class="rest">
+        <div class="firstc">
+         <div class="circle">
+        <h2> <i class="fa-solid fa-money-bill-transfer"></i> <br>
+        <a href="welcome.html" id="open-popup">Reset</a>
+</h2>
+        </div>
+        <div class="circle">
+        <h2> <i class="fa-solid fa-database"></i> <br>
+            <a href="pay.html" id="open-popup">Buy BPC</a> </h2>
+        </div>
+        <div class="circle"> <h2> <i class="fa-solid fa-signal"></i> <br>
+            <a href="video.html" id="open-popup">Watch</a></h2></div>
+        </div>
+        <div class="firstc">
+         <div class="circle"> <h2> <i class="fa-solid fa-flask"></i> <br>
+            <a id="" href="https://api.whatsapp.com/send?phone=2349129165186&text=Hi%20admin%20I%20am%20a%20user%20of%20Blue%20Pay%20v.2025">Contact</a></h2></div>
+        <div class="circle"> <h2> <i class="fa-solid fa-globe"></i> <br>
+          <a href="https://whatsapp.com/channel/0029Vb0LIVTC6ZvqkvIcrv0N" id="open-popup">Group</a></h2></div>
+        <div class="circle"> <h2> <i class="fa-solid fa-cubes"></i><br>
+          <a href="faq.html" id="open-popup">Faq</a></h2></div>
+        </div>
+    </div>
+    <div id="popup-container">
+        <div id="popup-content">
+            <h2>Welcome</h2>
+            <p><span></span> you have been given 200,000 to <br> withdraw every day. dont click  on the reset button untill tomorrow, else you will be baned,kindly join group
+            <a style="color: blue;" href="https://chat.whatsapp.com/EZ16wCoZ8JQFDaVEM2GNES">Here</a></p> <br> 
+            <button id="close-popup">Close</button>  <button style="background:blue;" id="close-popup"><a href="#">Reset</a></button>
+        </div>
+    </div>
+  
+    <div class="foot">
+    </div>
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+      #popup-content  a {
+            text-decoration: none;
+            color: white;
+        }
+     span {
+        color: blue;
+     }   /* Your CSS for styling the popup */
+
+#popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#close-popup {
+    background: #ff5733;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+    </style>
+    <script>
+     document.addEventListener("DOMContentLoaded", function () {
+    const openPopupButton = document.getElementById("open-popup");
+    const popupContainer = document.getElementById("popup-container");
+    const closePopupButton = document.getElementById("close-popup");
+
+    openPopupButton.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent the default link behavior
+        popupContainer.style.display = "block";
+    });
+
+    closePopupButton.addEventListener("click", function () {
+        popupContainer.style.display = "none";
+    });
+});
+
+    </script>
+    
+     <script type="text/javascript">
+        // Your phone number (with country code) and the message you want to pre-fill
+        const phoneNumber = "+2349129165186";  // Replace with the phone number you want to send the message to
+        const message = "Hello";  // Replace with your custom message
+
+        // Encode the message to make it URL safe
+        const encodedMessage = encodeURIComponent(message);
+
+        // Create the WhatsApp link
+        const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+        // Set the href attribute of the anchor tag
+        document.getElementById("whatsappLink").href = whatsappLink;
+    </script>
+
+
+
+</body></html>

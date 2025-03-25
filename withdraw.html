@@ -1,0 +1,130 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw Funds</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,600;1,500&family=Poppins:wght@400;600&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: none;
+            color: black;
+            padding-top: 90px; /* Height of the fixed header */
+        }
+        .top {
+            width: 100%;
+            height: 90px;
+            position: fixed;
+            top: 0;
+            background: #2e34e0;
+            color: white;
+            z-index: 1000;
+        }
+        .top p {
+            padding-top: 39px;
+            padding-left: 7px;
+            font-size: 19px;
+        }
+        input, select, button {
+            width: 100%;
+            height: 49px;
+            border-radius: 9px;
+            border: 2px solid blue;
+            margin: 10px auto;
+            display: block;
+            color: rgb(0, 0, 0);
+        }
+        ::placeholder {
+            padding-left: 10px;
+            color: rgb(0, 0, 0);
+        }
+        button {
+            background: blue;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <p><strong>Transfer To Bank</strong></p>
+    </div>
+    
+    <div style="margin: 20px;">
+        <h3 style="color: black;">Bank Details</h3>
+        <form id="submitForm">
+            <input type="text" name="account_name" placeholder="Account Name" required="">
+            <input type="text" name="account_number" placeholder="Account Number" required="">
+            <select name="bank_name">
+                <!-- Bank options -->
+                  <option>Access Bank</option>
+                 <option>Access Bank</option>
+                <option>Fidelity Bank</option>
+                <option>FCMB Bank</option>
+                <option>GTBank Bank</option>
+                <option>UBA Bank</option>
+                <option>Zenith  Bank</option>
+                <option>Ecobank Bank</option>
+                <option>Keystone Bank</option>
+                <option>Polaris Bank</option>
+                <option>Stanbic Bank</option>
+                <option>Standard Chartered Bank</option>
+                <option>Sterling Bank</option>
+                <option>Wema Bank</option>
+                <option>Palmpay Bank</option>
+                <option>Opay Bank</option>
+                <option>smart cash</option>
+                <option>Heritage Bank</option>
+                <option>Citibank  Bank</option>
+                <option>Titan Trust bank</option>
+                <option>Kuda Bank</option>
+                <option>Chipper Bank</option>
+                <option>Flutterwave Bank</option>
+                <option>Paystack Bank</option>
+                <option>Paga Bank</option>
+                <option>VFD Bank</option>
+                <option>UBA Bank</option>
+                <option>First Bank</option>
+                <option>Jaiz Bank</option>
+                <option>union Bank</option>
+                <option>unity Bank</option>
+                <option>Moniepoint Bank</option>
+                <option>Raven Bank</option>
+                <option>Sparkle Bank</option>
+                <option>Rubbies Bank</option>
+                <option>Paystack Bank</option>
+                <option>Paga Bank</option>
+                <option>Fairmoney Bank</option>
+                <option>Dot Mf Bank</option>
+                <option>MKOBO Bank</option>
+                <option>Rex MF Bank</option>
+            </select>
+            <input type="number" name="amount" placeholder="Amount" required="">
+            <input type="text" name="bpc" placeholder="BPC CODE" required="" id="bpc">
+            <p>Available Balance: ₦200000.00</p>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        const form = document.getElementById('submitForm');
+        form.addEventListener('submit', (e) => {
+        e.preventDefault(); // Prevent default form submission
+
+        const bpc = document.getElementById('bpc').value;
+
+        if (bpc === 'BPC247') {
+            // Redirect to success page
+            window.location.href = 'success.html';
+        } else {
+            // Redirect to error page
+            window.location.href = 'error.html';
+        }
+});
+    </script>
+    
+
+
+</body></html>

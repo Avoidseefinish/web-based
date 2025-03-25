@@ -1,0 +1,386 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/3ee0f23889.js" crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,900&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .top {
+           width: 100%;
+           height: 39px; 
+           margin-top: 30px;
+           background: rgb(208, 206, 206);
+        }
+        .top p {
+            padding-top: 6px;
+            padding-left: 20px;
+        }
+
+        .amount {
+            width: 100%;
+            height: 120px;
+            background: #ffffff;
+        }
+        .amount h3  {
+            float: right;
+            position: relative;
+            bottom: -20px;
+            padding-right: 12px;
+        }
+        .amount  p {
+            float: right;
+            padding-right: 12px;
+        }
+        .amount img {
+            width: 100px;
+            position: relative;
+            top: -36px;
+        }
+      .tp  p {
+            text-align: center;
+        }
+        .box {
+            width: 95%;
+            height: fit-content;
+            margin: 0 auto;
+            border: 1px solid grey;
+            background: #f5f2f2;
+        }
+        .box h3, p {
+            padding-left: 15px;
+        }
+
+        .copy-button {
+            float: right;
+            margin-right: 15px;
+            background-color: orange;
+            color: white;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            top: -20px;
+            width: 50px;
+        }
+        .btn button {
+            width: 89%;
+            height: 39px;
+            margin:  0 auto;
+            display: block;
+            border: none;
+            background: orange;
+        }
+
+        /* Additional styles for the spinner and transfer complete message */
+        #spinner, #transferCompleteMessage {
+            text-align: center;
+            font-size: 20px;
+            display: none;
+            margin-top: 20px;
+        }
+        /* CSS Spinner animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid orange;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin .7s linear infinite;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+.bc {
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    border: 1px solid rgb(233, 232, 232);
+    background: #f2f2f2;
+}
+.bb i {
+    width: 25px;
+    height: 25  px;
+    clip-path: circle();
+    /* background-color: green; */
+    color: green;
+    float: right;
+    position: relative;
+    left: -20px;
+    top: 12px;
+}
+.spinners {
+            width: 20px;
+            height: 20px;
+            border: 8px solid rgba(255, 255, 255, 0.3);
+            border-top: 8px solid orange;
+            border-radius: 50%;
+            animation: spin .2s linear infinite;
+            margin: 50px auto;
+            float: right;
+            position: relative;
+            top: -39px;
+
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @media screen and (max-width: 768px) {
+            .top {
+           width: 100%;
+           height: 39px; 
+           margin-top: 30px;
+           background: rgb(208, 206, 206);
+        }
+        .top p {
+            padding-top: 6px;
+            padding-left: 20px;
+        }
+
+        .amount {
+            width: 100%;
+            height: 120px;
+            background: #ffffff;
+        }
+        .amount h3  {
+            float: right;
+            position: relative;
+            bottom: -20px;
+            padding-right: 12px;
+            font-size: 15px;
+        }
+        .amount  p {
+            float: right;
+            padding-right: 12px;
+            font-size: 18px;
+        }
+        .amount img {
+            width: 80px;
+            position: relative;
+            top: -45px;
+        }
+      .tp  p {
+            text-align: center;
+            font-size: 15px;
+        }
+        .box {
+            width: 90%;
+            height: fit-content;
+            margin: 0 auto;
+            border: 1px solid grey;
+            background: #f5f2f2;
+        }
+        .box h3, p {
+            padding-left: 15px;
+            font-size: 13px;
+        }
+
+        .copy-button {
+            float: right;
+            margin-right: 15px;
+            background-color: orange;
+            color: white;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            top: -20px;
+            width: 40px;
+        }
+        .btn button {
+            width: 89%;
+            height: 39px;
+            margin:  0 auto;
+            display: block;
+            border: none;
+            background: orange;
+        }
+
+        /* Additional styles for the spinner and transfer complete message */
+        #spinner, #transferCompleteMessage {
+            text-align: center;
+            font-size: 20px;
+            display: none;
+            margin-top: 20px;
+        }
+        /* CSS Spinner animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid orange;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin .7s linear infinite;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+.bc {
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    border: 1px solid rgb(233, 232, 232);
+    background: #f2f2f2;
+}
+.bb i {
+    width: 25px;
+    height: 25  px;
+    clip-path: circle();
+    /* background-color: green; */
+    color: green;
+    float: right;
+    position: relative;
+    left: -20px;
+    top: 12px;
+}
+.spinners {
+            width: 20px;
+            height: 20px;
+            border: 8px solid rgba(255, 255, 255, 0.3);
+            border-top: 8px solid orange;
+            border-radius: 50%;
+            animation: spin .2s linear infinite;
+            margin: 50px auto;
+            float: right;
+            position: relative;
+            top: -39px;
+
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <p>Bank Transfer <span style="float: right; padding-right: 10px; color: red;">Cancel</span></p>
+    </div>
+    <div class="amount">
+
+        
+        <h3>NGN <span>6,500</span> <span style="width: 100px; height: 13px; background: #000;"></span></h3>
+        <br> <br>
+        <p style="font-size: 11px;" id="email"></p>
+        <img src="images/f207.png" alt="">  <br> <br>
+    </div>
+    <div class="tp">
+        <p>Proceed to your bank app to complete this Transfer</p>
+    </div> <br>
+    <div id="spinner" style="display: none;">
+        <div class="spinner" style="font-size: 13px;"></div>
+       <p> Wait while we confirm your payment... </p><br> <br>
+
+        <div class="bc">
+          <p style="float: left; font-size: 13px; padding-top: 12px;"> Payment Made </p><div class="bb"><i class="fa-solid fa-circle-check"></i></div><p></p>
+          
+        </div> <br>
+        <div class="bc">
+            <p style="float: left; font-size: 13px; padding-top: 12px;">Confirming Payment </p><div class="spinners"></div><p></p>
+            
+          </div>
+    </div>
+    
+
+    <div id="transferCompleteMessage" style="display: none;">
+       <p style="font-size: 13px;">Payment not confirmed, need help? contact email: </p> <a style="font-size: 13px;" href="mailto:surdarkw@gmail.com">here</a> <br>
+
+        <button style="width: 130px; margin: 0 auto; display: block; height: 37px; border: none; background: green;"><a style="text-decoration: none; color: white;" href="">Re-check</a></button>
+    </div>
+    <div class="box"> <br>
+
+        
+        <p>Amount</p>
+        <h3>NGN  <span id="amountToCopy">6500</span> </h3>
+        <button class="copy-button" onclick="copyText('amountToCopy')">Copy</button>
+        <br>
+
+        <p>Account Number</p>
+        <h3 id="accountNumberToCopy"> 1002769666 </h3>
+        <button class="copy-button" onclick="copyText('accountNumberToCopy')">Copy</button>
+        <br>
+
+        <p>Bank Name</p>
+        <h3>SPARKLE </h3> <br>
+
+        
+
+        <p>Account Name</p>
+        <h3>CHINEMEREM SUNDAY</h3> <br> <hr> <br>
+        <p>Pay to this specific account and get your BPC code </p> <br>
+        <div class="btn">
+            <button id="transferButton" onclick="startTransfer()">I have made this bank Transfer</button> <br> 
+        </div>
+    
+    </div> <br>
+   
+    
+    <script>
+       
+        function copyText(elementId) {
+            var textToCopy = document.getElementById(elementId).textContent;
+            var dummyElement = document.createElement("textarea");
+            document.body.appendChild(dummyElement);
+            dummyElement.value = textToCopy;
+            dummyElement.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummyElement);
+            alert("Copied: " + textToCopy);
+        }
+
+        function startTransfer() {
+            // Hide the content in the .box
+            const box = document.querySelector('.box');
+            box.style.display = 'none';
+
+            // Show the spinner
+            const spinner = document.getElementById('spinner');
+            spinner.style.display = 'block';
+
+            // Set a timer to display "Transfer Successful" after 5 seconds
+            setTimeout(function () {
+                spinner.style.display = 'none';
+                const transferCompleteMessage = document.getElementById('transferCompleteMessage');
+                transferCompleteMessage.style.display = 'block';
+            }, 15000);
+        }
+
+        // Function to parse query parameters from the URL
+        function parseQueryParameters() {
+            const queryParams = new URLSearchParams(window.location.search);
+            const fullName = queryParams.get('fullName');
+            const email = queryParams.get('email');
+            return { fullName, email };
+        }
+
+        // Retrieve and display form data
+        const { fullName, email } = parseQueryParameters();
+        document.getElementById('email').textContent += email;
+   
+    </script>
+
+
+
+</body></html>
